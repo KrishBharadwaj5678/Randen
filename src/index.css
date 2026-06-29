@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+* {
+  cursor: none !important;
+}
+
+/* Light Mode */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text-color: black;
+  --input-border: #cdcdd0;
+  --input-bg: white;
+  --input-focus: none;
+  --button-bg: white;
+}
+
+/* Dark Mode */
+html.dark body {
+  color-scheme: dark;
+  --bg: #030712;
+  --text-color: #f8fafc;
+  --input-border: #1c202a;
+  --input-bg: #030610;
+  --input-focus: #90a1b9;
+  --button-bg: #020618;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Scoped to AnimatedThemeToggler — the toggler sets the data-attribute and the variable only during a theme toggle. */
+html[data-magicui-theme-vt="active"]::view-transition-group(root) {
+  animation-duration: var(--magicui-theme-toggle-vt-duration);
+}
+
+/* Remove native number input spinner arrows */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 640px) {
+  /* Stack input fields vertically on small screens */
+  .flex.space-x-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .flex.space-x-6 input {
+    width: 100% !important;
+  }
+
+  /* Make primary generate button full width on small screens */
+  .relative.inline-flex.h-14 {
+    width: 70% !important;
+  }
+
+  .inline-flex.h-full.w-full {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  /* Increase CountUp font size on small screens */
+  .count-up-text {
+    font-size: 3.2rem;
+    line-height: 0;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .flex.space-x-6 {
+    gap: 0.6rem;
+  }
+
+  .count-up-text {
+    font-size: 3rem;
+  }
+}
