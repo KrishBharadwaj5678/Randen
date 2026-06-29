@@ -4,6 +4,12 @@ import { SmoothCursor } from "../components/ui/SmoothCursor";
 import { AnimatedThemeToggler } from "../components/ui/AnimatedThemeToggler";
 import generateNumSound from "../assets/sounds/generateNum.mp3";
 import { type Range } from "../types/Range";
+import {
+  GENERATE_BUTTON_CLASS,
+  GENERATE_BUTTON_CONTENT_CLASS,
+  GENERATE_BUTTON_SPIN_CLASS,
+  INPUT_CLASS,
+} from "../constants/style";
 
 const Home = () => {
   // Holds the minimum and maximum values for the random number range
@@ -55,7 +61,7 @@ const Home = () => {
           <input
             type="number"
             placeholder="Minimum Value"
-            className="rounded-md border-2 border-(--input-border) bg-(--input-bg) px-5 py-3 text-(--text-color) outline-none transition duration-200 focus:ring-(--input-focus) focus:ring-2"
+            className={INPUT_CLASS}
             onChange={(e) =>
               setNum({
                 ...num,
@@ -66,7 +72,7 @@ const Home = () => {
           <input
             type="number"
             placeholder="Maximum Value"
-            className="rounded-md border-2 border-(--input-border) bg-(--input-bg) px-5 py-3 text-(--text-color) outline-none transition duration-200 focus:ring-(--input-focus) focus:ring-2"
+            className={INPUT_CLASS}
             onChange={(e) =>
               setNum({
                 ...num,
@@ -77,14 +83,9 @@ const Home = () => {
         </div>
 
         {/* Generate Number */}
-        <button
-          className="relative inline-flex h-14 overflow-hidden rounded-full p-[1.5px] focus:outline-none focus:ring-[0.5px] focus:ring-slate-400 focus:ring-offset-[0.5px] focus:ring-offset-slate-50"
-          onClick={handleGenerate}
-        >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-(--button-bg) px-12 py-2 text-md font-medium text-(--text-color) backdrop-blur-3xl">
-            Generate Number
-          </span>
+        <button className={GENERATE_BUTTON_CLASS} onClick={handleGenerate}>
+          <span className={GENERATE_BUTTON_SPIN_CLASS} />
+          <span className={GENERATE_BUTTON_CONTENT_CLASS}>Generate Number</span>
         </button>
       </div>
     </>
