@@ -87,10 +87,27 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
   .flex.space-x-6 {
-    gap: 0.6rem;
+    gap: 0.5rem;
+  }
+
+  .flex.space-x-6 input {
+    min-height: 4rem;
+    padding: 0.85rem 1.15rem;
+    font-size: 1.2rem;
+  }
+
+  .relative.inline-flex.h-14 {
+    min-height: 3.9rem;
+    padding: 0.2rem;
+  }
+
+  .relative.inline-flex.h-14 span:last-child {
+    min-height: 3.1rem;
+    padding: 0.75rem 2.2rem;
+    font-size: 1.05rem;
   }
 
   .count-up-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }

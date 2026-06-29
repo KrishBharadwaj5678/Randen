@@ -50,7 +50,7 @@ const Home = () => {
           <input
             type="number"
             placeholder="Minimum Value"
-            className="rounded-md border-2 border-[var(--input-border)] bg-[var(--input-bg)] px-5 py-3 text-[var(--text-color)] outline-none transition duration-200 focus:ring-[var(--input-focus)] focus:ring-2"
+            className="rounded-md border-2 border-(--input-border) bg-(--input-bg) px-5 py-3 text-(--text-color) outline-none transition duration-200 focus:ring-(--input-focus) focus:ring-2"
             onChange={(e) =>
               setNum({
                 ...num,
@@ -61,7 +61,7 @@ const Home = () => {
           <input
             type="number"
             placeholder="Maximum Value"
-            className="rounded-md border-2 border-[var(--input-border)] bg-[var(--input-bg)] px-5 py-3 text-[var(--text-color)] outline-none transition duration-200 focus:ring-[var(--input-focus)] focus:ring-2"
+            className="rounded-md border-2 border-(--input-border) bg-(--input-bg) px-5 py-3 text-(--text-color) outline-none transition duration-200 focus:ring-(--input-focus) focus:ring-2"
             onChange={(e) =>
               setNum({
                 ...num,
@@ -77,7 +77,7 @@ const Home = () => {
           onClick={handleGenerate}
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[var(--button-bg)] px-12 py-2 text-md font-medium text-[var(--text-color)] backdrop-blur-3xl">
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-(--button-bg) px-12 py-2 text-md font-medium text-(--text-color) backdrop-blur-3xl">
             Generate Number
           </span>
         </button>
