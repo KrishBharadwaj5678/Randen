@@ -6,20 +6,25 @@ import generateNumSound from "../assets/sounds/generateNum.mp3";
 import { type Range } from "../types/Range";
 
 const Home = () => {
+  // Holds the minimum and maximum values for the random number range
   let [num, setNum] = useState<Range>({
     min: 0,
     max: 100,
   });
 
+  // Stores the currently displayed random number
   let [random, setRandom] = useState<number>(100);
 
+  // Preloads the sound effect used when generating a number
   let generateNum = new Audio(generateNumSound);
 
+  // Generates a random number within the selected range and plays the sound
   let handleGenerate = () => {
     setRandom(Math.floor(Math.random() * (num.max - num.min + 1)) + num.min);
     generateNum.play();
   };
 
+  // Generate an initial number when the page first loads.
   useEffect(() => {
     handleGenerate();
   }, []);
