@@ -4,7 +4,8 @@
 
 Um **gerador de números aleatórios online** que permite gerar números inteiros aleatórios dentro de um intervalo personalizado.
 
-![RandenDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenDemo.png)
+![RandenWebDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenWebDemo.png)
+![RandenMobileDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenMobileDemo.png)
 
 ## ✨ Funcionalidades
 
