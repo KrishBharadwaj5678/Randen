@@ -4,7 +4,8 @@
 
 An **online random number generator** that allows users to generate random integers within a custom range. 
 
-![RandenDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenDemo.png)
+![RandenWebDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenWebDemo.png)
+![RandenMobileDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenMobileDemo.png)
 
 ## ✨ Features
 

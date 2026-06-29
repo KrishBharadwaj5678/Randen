@@ -4,7 +4,8 @@
 
 カスタム範囲内でランダムな整数を生成できる**オンライン乱数生成ツール**です。
 
-![RandenDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenDemo.png)
+![RandenWebDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenWebDemo.png)
+![RandenMobileDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenMobileDemo.png)
 
 ## ✨ 特徴
 

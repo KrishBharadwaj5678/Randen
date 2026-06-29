@@ -4,7 +4,8 @@
 
 **Онлайн-генератор случайных чисел**, который позволяет генерировать случайные целые числа в заданном диапазоне.
 
-![RandenDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenDemo.png)
+![RandenWebDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenWebDemo.png)
+![RandenMobileDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenMobileDemo.png)
 
 ## ✨ Возможности
 
