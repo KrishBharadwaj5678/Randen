@@ -1,32 +1,60 @@
-# React + TypeScript + Vite
+[English](README.md) | [Português](README.pt.md) | [日本語](README.ja.md) | [Русский](README.ru.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# 🎲 Randen
 
-Currently, two official plugins are available:
+An **online random number generator** that allows users to generate random integers within a custom range. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![RandenDemo](https://github.com/KrishBharadwaj5678/Randen/raw/main/demos/RandenDemo.png)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Feature                     | Description                                                 |
+| --------------------------- | ----------------------------------------------------------- |
+| 🎲 Random Number Generation | Generate random integers within a specified range           |
+| 🔢 Custom Range             | Set your own minimum and maximum values                     |
+| ⚡ Instant Results          | Generate numbers with a single click                        |
+| 📱 Responsive Design        | Optimized for desktop, tablet, and mobile devices          |
+| 🎨 Modern UI               | Clean and intuitive user interface                          |
+| 🌙 Dark & Light Mode       | Supports both dark and light themes for better usability   |
+| 🚀 Fast Performance        | Lightweight and built with Vite for quick loading          |
+| 🔍 SEO Optimized           | Includes metadata, sitemap, robots.txt, and structured data |
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+| Technology          | Purpose                                                |
+| ------------------- | ------------------------------------------------------ |
+| ⚛️ **React**        | Frontend library for building the user interface       |
+| 📘 **TypeScript**   | Provides type safety and improved developer experience |
+| ⚡ **Vite**          | Fast development server and build tool                 |
+| 🎨 **Tailwind CSS** | Utility-first CSS framework for styling                |
+| 🧩 **shadcn/ui**    | Reusable and accessible UI components                  |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/KrishBharadwaj5678/Randen.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2️⃣ Navigate to the project directory
+
+```bash
+cd Randen
+```
+
+### 3️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Start the development server
+
+```bash
+npm run dev
+```
